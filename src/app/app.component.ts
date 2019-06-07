@@ -33,16 +33,6 @@ export class AppComponent {
       icon: 'book'
     },
     {
-      title: 'Cadastro de Mensagens',
-      url: '/cadastro-de-mensagem',
-      icon: 'ios-mail'
-    },
-    {
-      title: 'Lista de Mensagens',
-      url: '/lista-de-mensagem',
-      icon: 'ios-list-box'
-    },
-    {
       title: 'Nossas Marcas',
       url: '/nossas-marcas',
       icon: 'md-list-box'
@@ -91,13 +81,13 @@ export class AppComponent {
     .subscribe(
       user => {
         if (user) {
-          this.router.navigate(['/inicio']);
+          this.router.navigate(['/roupas']);
           } else {
             this.router.navigate(['/home']);
           }
       },
       () => {
-        this.router.navigate(['/lista-de-clientes']);
+        this.router.navigate(['/roupas']);
       }
     );
 
